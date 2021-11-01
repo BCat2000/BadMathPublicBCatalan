@@ -2,22 +2,22 @@
 #include <iomanip>
 using namespace std;
 
-float average(int i1, int i2, int i3)
+float Average(int int1, int int2, int int3)
 {
-	return i1 + i2 + i3 / 3.0f;
+	return (int1 + int2 + int3) / 3.0f; // The ints need to be summed insided parentheses or else only int 3 is divided
 }
 
 int main()
 {
-	int n1 =0 , n2 = 0, n3 = 0;
+	int num1 =0 , num2 = 0, num3 = 0;
 	cout << "This program calculates the average of three numbers." << endl;
-	cout << "First number: "; cin >> n1;
-	cout << "Second number: "; cin >> n2;
-	cout << "Third number: "; cin >> n2;
+	cout << "First number: "; cin >> num1;
+	cout << "Second number: "; cin >> num2;
+	cout << "Third number: "; cin >> num3; // Cin was used on num2 twice instead of on num3
 
-	float a = average(n1, n2, n3);
+	float avg = Average(num1, num2, num3);
 
-	cout << setprecision(1) << fixed << "The average is " << a << endl;
+	cout << setprecision(1) << fixed << "The average is " << avg << endl;
 
 	return 0;
 }
